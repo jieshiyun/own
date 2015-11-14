@@ -1,0 +1,34 @@
+#form{
+	width: 717px;
+	margin: 0 auto;
+	margin-top: 166px;
+	font-family: cursive;		
+	font-size: 2em;
+}
+#title{
+	margin-bottom: 50px;
+}
+#tit{
+	position: relative;
+	margin-right: 60px;
+}
+#titf{
+	line-height: 23px;
+	position: relative;
+	top:-5px;
+}
+#cont{
+	position: relative;
+	margin-right: 10px;
+	top: -208px;
+}
+#sub{
+	text-align: right;
+}
+#footer{
+ 	margin-top: 150px;
+ 	margin-bottom: 100px;
+ 	text-align: center;
+ 	font-size: 0.6em;
+ 	color:#948C8C;
+ }

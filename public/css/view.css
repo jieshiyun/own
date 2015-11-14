@@ -1,0 +1,28 @@
+#all{
+	width: 800px;
+	margin: 0 auto;
+	color: #40584F;
+	margin-top: 85px;
+}
+#h22{
+	text-align: center;
+	color: #73B99F;
+	margin: 90px 0 90px 0;
+	font-family: cursive;
+}
+
+#date{
+	text-align: right;
+	margin-bottom: 40px;
+}
+#back{
+	text-align: right;
+	margin-top:50px;
+}
+#footer{
+ 	margin-top: 150px;
+ 	margin-bottom: 100px;
+ 	text-align: center;
+ 	font-size: 0.6em;
+ 	color:#948C8C;
+ }

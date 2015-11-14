@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link rel="stylesheet" type="text/css" href="public/css/show.css">
+	<title></title>
+</head>
+<body>
+	<div id="page">
+		
+
+	<h2 id="h">MY BLOG</h2>
+
+				<div id="add"><a href = "?action=add"><img src="public/images/add.png"></a></div>
+				<form action="" method="get" id="sh">
+				<input type="text" name = "keys">
+				<input type = "submit" value = "search" name = "submit">
+				</form>
+
+			<?php
+				if(!empty($_GET['submit'])){
+			?>
+				<div id="back"><a href="?action=show"><img src="public/images/back.png"></i></a></div>
+			<?php
+				}
+			?>
+
+
+
+		<div id="con">
+
+			<?php 
+			for($i = 0;$i < count($data);$i++){
+				?>
+				<div id="eachCon">
+					<p id="title"><?php echo $data[$i]['title'] ?></p>
+					<p id="date"><?php echo $data[$i]['dates'] ?></p>
+					<p id="content"><?php echo $data[$i]['contents'] ?></p>
+					<div id="select">
+						<a href="?action=view&id=<?php echo $data[$i]['id']; ?>">查看全文</a>|
+						<a href="?action=edit&id=<?php echo $data[$i]['id']; ?>" >编辑</a>|
+						<a href="?action=delete&id=<?php echo $data[$i]['id']; ?>" >删除</a>
+					</civ>
+
+				</div>
+
+			<?php
+				}
+			?>
+		</div>
+
+	</div>
+
+	<div id ="footer">
+		©2015 jieshiyun. All Rights Reserved.
+	</div>
+
+</body>
+</html>

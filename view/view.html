@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html;charset=utf8">
+	<link rel="stylesheet" type="text/css" href="public/css/view.css">
+	<title></title>
+</head>
+<body>
+
+<div id="all">
+
+		<h2 id="h22">
+			<?php 
+			echo $data['title'];
+			?>
+		</h2>
+
+		<p id="date">
+			<?php
+				echo $data['dates'];
+			?>
+		</p>
+
+		<p id ="con">
+			<?php
+				echo $data['contents'];
+			?>
+		</p>
+
+
+		<div id="back"><a href="?action=show"><img src="public/images/back.png"></i></a></div>
+	</div>
+		<div id ="footer">
+		©2015 jieshiyun. All Rights Reserved.
+	</div>
+
+</body>
+</html> 
