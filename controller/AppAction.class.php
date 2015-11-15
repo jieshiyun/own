@@ -13,8 +13,10 @@ class AppAction extends Action{
 		$this->rander('add',null);
 
 		if(!empty($_POST['submit'])){
+
 			$tit = $_POST['title'];
-			$con = $_POST['content'];
+			$con1 = $_POST['content'];
+			$con = str_replace("\n","<br/>",$con1);
 			$this->Form1->insert($tit,$con);
 			$this->redirect('App','show','add');
 		}
