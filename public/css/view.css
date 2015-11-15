@@ -26,3 +26,6 @@
  	font-size: 0.6em;
  	color:#948C8C;
  }
+ #con{
+ 	word-wrap:break-word;
+ }

@@ -45,6 +45,8 @@
  }
  #content{
  	font-size: 0.65em;
+ 	word-wrap:break-word;
+ 
  }
  #eachCon{
  	margin-top: 20px;
