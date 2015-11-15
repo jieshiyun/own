@@ -1,5 +1,4 @@
 <?php
-include_once("db.conf");
 include_once("controller/Action.class.php");
 
 if(empty($_GET['module']))
