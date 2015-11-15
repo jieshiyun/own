@@ -2,6 +2,7 @@
 class DBConnect{
 	protected $conn;
 	public function __construct(){
+		print_r($GLOBAL_DB_CONF);
 		$this->conn = mysqli_connect($GLOBAL_DB_CONF['host'].':'.$GLOBAL_DB_CONF['port'],$GLOBAL_DB_CONF['user'],$GLOBAL_DB_CONF['password']) or die ('can not connect database');
 		if($this->conn)
 			{
