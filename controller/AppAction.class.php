@@ -56,13 +56,15 @@ class AppAction extends Action{
 
 		if(!empty($_GET['id'] )){
 			$id=$_GET['id'];	
-			$rrs=$this->Form1->select($id);	
+			$rrs=$this->Form1->select($id);
+			$rrs['contents'] = str_replace("<br/>","\n",$rrs['contents']);
 		}
 
 
 		if(!empty($_POST['submit'])){
 			$title = $_POST['title'];
-			$content = $_POST['content'];
+			$content1 = $_POST['content'];
+			$content = str_replace("\n","<br/>",$content1);
 			$this->Form1->update($id,$title,$content);
 			$this->redirect(null,'show','update');
 		}	
